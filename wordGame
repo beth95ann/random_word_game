@@ -1,0 +1,120 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+int main()
+{
+
+char letterOne;
+char letterTwo;
+char letterThree;
+char letterFour;
+char letterFive;
+char letterSix;
+char letterSeven;
+char letterEight;
+char letterNine;
+char letterTen;
+int length;
+char YorN;
+
+
+
+printf("Give me one letter at a time and then I'll print the word.\nDo you want to try? y or n\n");
+scanf(" %c", &YorN);
+
+if(YorN == 'y'){
+printf("First, how many letters long is this word?\n");
+scanf("%d", &length);
+
+printf("Okay, what's the first letter?\n");
+scanf(" %c", &letterOne);
+
+
+
+switch(length){
+case 1 :
+    printf("Wow. So just that letter?\n");
+    printf("\n\n%c\n\n", letterOne);
+    break;
+case 2 :
+    printf("Okay, what's the second/last letter?\n");
+    scanf(" %c", &letterTwo);
+    printf("\n\n%c%c\n\n", letterOne, letterTwo);
+    break;
+case 3 :
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterTwo);
+    printf("And the last letter?\n");
+    scanf(" %c", &letterThree);
+    printf("\n\n%c%c%c\n\n", letterOne, letterTwo, letterThree);
+    break;
+case 4 :
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterTwo);
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterThree);
+    printf("Okay, and the last letter?\n");
+    scanf(" %c", &letterFour);
+    printf("\n\n%c%c%c%c\n\n", letterOne, letterTwo, letterThree, letterFour);
+    break;
+case 5 :
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterTwo);
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterThree);
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterFour);
+    printf("Okay, what's the fifth letter?\n");
+    scanf(" %c", &letterFive);
+    printf("\n\n%c%c%c%c%c\n\n", letterOne, letterTwo, letterThree, letterFour, letterFive);
+    break;
+case 6 :
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterTwo);
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterThree);
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterFour);
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterFive);
+    printf("Okay, what's the last letter?\n");
+    scanf(" %c", &letterSix);
+    printf("\n\n%c%c%c%c%c%c\n\n", letterOne, letterTwo, letterThree, letterFour, letterFive, letterSix);
+    break;
+case 7 :
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterTwo);
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterThree);
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterFour);
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterFive);
+    printf("Okay, what's the next letter?\n");
+    scanf(" %c", &letterSix);
+    printf("Okay, number seven?\n");
+    scanf(" %c", &letterSeven);
+    printf("\n\n%c%c%c%c%c%c%c\n\n", letterOne, letterTwo, letterThree, letterFour, letterFive, letterSix, letterSeven);
+    break;
+}} else{
+    printf("That's no fun. Wow.\n\n");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+return 0;
+}
+
